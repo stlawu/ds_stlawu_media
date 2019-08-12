@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.media.remote_video.field_media_author_name
+    - field.field.media.remote_video.field_media_byline_freeform
     - field.field.media.remote_video.field_media_cache_age
     - field.field.media.remote_video.field_media_caption
     - field.field.media.remote_video.field_media_height
@@ -24,6 +25,13 @@ targetEntityType: media
 bundle: remote_video
 mode: default
 content:
+  field_media_byline_freeform:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_media_caption:
     weight: 1
     label: hidden

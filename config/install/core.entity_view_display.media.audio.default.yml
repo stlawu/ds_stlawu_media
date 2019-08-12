@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_byline_freeform
     - field.field.media.audio.field_media_caption
     - field.field.media.audio.field_media_file_size
     - field.field.media.audio.field_media_mime_type
@@ -25,6 +26,13 @@ content:
       autoplay: false
       loop: false
     third_party_settings: {  }
+    region: content
+  field_media_byline_freeform:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   field_media_caption:
     weight: 1

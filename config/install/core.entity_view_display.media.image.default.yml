@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image.field_media_byline_freeform
     - field.field.media.image.field_media_caption
     - field.field.media.image.field_media_file_size
     - field.field.media.image.field_media_height
@@ -17,6 +18,13 @@ targetEntityType: media
 bundle: image
 mode: default
 content:
+  field_media_byline_freeform:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_media_caption:
     weight: 2
     label: hidden

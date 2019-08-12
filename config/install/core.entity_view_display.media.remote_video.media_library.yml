@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.remote_video.field_media_author_name
+    - field.field.media.remote_video.field_media_byline_freeform
     - field.field.media.remote_video.field_media_cache_age
     - field.field.media.remote_video.field_media_caption
     - field.field.media.remote_video.field_media_height
@@ -37,6 +38,7 @@ content:
 hidden:
   created: true
   field_media_author_name: true
+  field_media_byline_freeform: true
   field_media_cache_age: true
   field_media_caption: true
   field_media_height: true

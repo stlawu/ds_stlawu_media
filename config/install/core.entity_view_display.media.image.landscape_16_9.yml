@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.landscape_16_9
+    - field.field.media.image.field_media_byline_freeform
     - field.field.media.image.field_media_caption
     - field.field.media.image.field_media_file_size
     - field.field.media.image.field_media_height
@@ -19,6 +20,13 @@ targetEntityType: media
 bundle: image
 mode: landscape_16_9
 content:
+  field_media_byline_freeform:
+    type: text_default
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_media_caption:
     weight: 2
     label: hidden
