@@ -7,6 +7,7 @@ dependencies:
   - allowed_formats:allowed_formats
   - drupal:ckeditor
   - crop:crop
+  - ds_stlawu_text_formats:ds_stlawu_text_formats
   - exif_orientation:exif_orientation
   - features:features
   - drupal:field
@@ -19,5 +20,4 @@ dependencies:
   - drupal:path
   - drupal:text
   - drupal:user
-  - ds_stlawu_text_formats:ds_stlawu_text_formats
   
