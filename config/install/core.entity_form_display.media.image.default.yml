@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.media.image.field_media_byline_freeform
     - field.field.media.image.field_media_caption
+    - field.field.media.image.field_media_description
     - field.field.media.image.field_media_file_size
     - field.field.media.image.field_media_height
     - field.field.media.image.field_media_image
@@ -27,7 +28,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_media_byline_freeform:
-    weight: 2
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
@@ -35,6 +36,14 @@ content:
     type: text_textarea
     region: content
   field_media_caption:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_media_description:
     weight: 1
     settings:
       rows: 5
@@ -51,7 +60,10 @@ content:
       crop_preview_image_style: crop_thumbnail
       crop_list:
         - '16_9'
+        - '1_1'
         - freeform
+        - social_media_facebook
+        - social_media_twitter
       progress_indicator: throbber
       crop_types_required: {  }
     third_party_settings: {  }

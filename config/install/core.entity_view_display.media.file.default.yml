@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.media.file.field_media_byline_freeform
     - field.field.media.file.field_media_caption
+    - field.field.media.file.field_media_description
     - field.field.media.file.field_media_file
     - field.field.media.file.field_media_file_size
     - field.field.media.file.field_media_mime_type
@@ -39,7 +40,9 @@ content:
     weight: 1
     region: content
 hidden:
+  addtoany: true
   created: true
+  field_media_description: true
   field_media_file_size: true
   field_media_mime_type: true
   name: true

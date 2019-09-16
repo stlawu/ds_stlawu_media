@@ -7,6 +7,7 @@ dependencies:
     - field.field.media.remote_video.field_media_byline_freeform
     - field.field.media.remote_video.field_media_cache_age
     - field.field.media.remote_video.field_media_caption
+    - field.field.media.remote_video.field_media_description
     - field.field.media.remote_video.field_media_height
     - field.field.media.remote_video.field_media_html
     - field.field.media.remote_video.field_media_oembed_video
@@ -28,7 +29,7 @@ mode: media_library
 content:
   field_media_byline_freeform:
     type: text_textarea
-    weight: 2
+    weight: 3
     region: content
     settings:
       rows: 5
@@ -36,12 +37,20 @@ content:
     third_party_settings: {  }
   field_media_caption:
     type: text_textarea
-    weight: 1
+    weight: 2
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_media_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_media_oembed_video:
     type: oembed_textfield
     weight: 0

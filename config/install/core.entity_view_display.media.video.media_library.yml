@@ -5,6 +5,7 @@ dependencies:
     - core.entity_view_mode.media.media_library
     - field.field.media.video.field_media_byline_freeform
     - field.field.media.video.field_media_caption
+    - field.field.media.video.field_media_description
     - field.field.media.video.field_media_file_size
     - field.field.media.video.field_media_mime_type
     - field.field.media.video.field_media_video_file
@@ -27,9 +28,11 @@ content:
       image_link: ''
     third_party_settings: {  }
 hidden:
+  addtoany: true
   created: true
   field_media_byline_freeform: true
   field_media_caption: true
+  field_media_description: true
   field_media_file_size: true
   field_media_mime_type: true
   field_media_video_file: true
